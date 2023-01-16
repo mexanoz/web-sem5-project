@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="controls">
+        <input type="button" value="Добавить запись" id="add-button">
+    </div>
+    <div id="search">
+        <button type="button" class="fa fa-magnifying-glass" id="search-button"></button>
+        <div id="search-inputs" class="hidden">
+            <label for="id-input">ID</label>
+            <input id="id-input">
+            <label for="name-input">Наименование</label>
+            <input id="name-input">
+            <label for="location-input">Расположение</label>
+            <input id="location-input">
+            <div id="amount-inputs">
+                <label>Количество</label>
+                <div>
+                    <input type="radio" id="amount-single" name="amount-radio" checked>
+                    <label for="amount-single">Точно</label>
+                </div>
+                <input id="amount-input" type="number" min="0" disabled>
+                <div>
+                    <input type="radio" id="amount-range" name="amount-radio">
+                    <label for="amount-range">В диапазоне</label>
+                </div>
+                <input id="amount-min" type="number" min="0" disabled>
+                <input id="amount-max" type="number" min="0" disabled>
+            </div>
+            <div id="search-buttons">
+                <input type="button" value="Применить" id="button-search-apply">
+                <input type="button" value="Сбросить" id="button-search-reset">
+            </div>
+        </div>
+    </div>
+    <table id="table">
+        <tr>
+            <th id="id" class="sorting-by sorted-by">ID<i class="fa fa-sort-down sort-icon"></i></th>
+            <th id="name" class="sorting-by">Наименование<i class="fa fa-sort sort-icon"></i></th>
+            <th id="location" class="sorting-by">Расположение<i class="fa fa-sort sort-icon"></i></th>
+            <th id="amount" class="sorting-by">Количество<i class="fa fa-sort sort-icon"></i></th>
+            <th id="buttons"></th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+}
+#controls {
+    display: inline-block;
+}
+input#add-button {
+    display: inline;
+    margin: 5px 0;
+}
+#search {
+    float: right;
+}
+button#search-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 5px 0;
+    font-size: 20px;
+    float: right;
+}
+#search-inputs {
+    display: flex;
+    flex-direction: column;
+}
+#search-inputs.hidden {
+    display: none;
+}
+#amount-inputs {
+    border: 1px none #bbb;
+    margin: 5px 0;
+}
+#search-buttons {
+    margin-top: 5px;
+}
+#button-search-reset {
+    float: right;
+}
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: 5px 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+table input[type="button"] {
+    margin: 2px;
+}
+th {
+    cursor: pointer;
+}
+th#id {
+    width: 3em;
+}
+td.id {
+    text-align: right;
+}
+th#name, th#location {
+    width: 15em;
+}
+th#amount {
+    width: 8em;
+}
+th#buttons {
+    width: 7em;
+}
+.sort-icon {
+    float: right;
+    font-size: 18px;
+    padding-top: 3px;
+}
+.button-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input.entry-input {
+    display: inline;
+    width: 100%;
+    box-sizing: border-box;
+}
+button.button-cancel {
+    font-size: 18px;
+    float: right;
+    padding-top: 4px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
